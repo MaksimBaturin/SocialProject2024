@@ -1,95 +1,42 @@
-import Image from "next/image";
 import styles from "./page.module.css";
+import {NavBar} from "@/app/components/NavBar";
+import {Footer} from "@/app/components/Footer";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    return (
+        <div>
+            <NavBar/>
+            <section id="home" className="content">
+                <div className="container">
+                    <h2>Добро пожаловать в "StudyFlow"!</h2>
+                    <h3>
+                        Почему эффективное управление временем важно?
+                    </h3>
+                    <p>
+                        Многие студенты сталкиваются с трудностями в управлении своим временем, что приводит к перегрузке, стрессу, снижению успеваемости и упущенным возможностям. Нехватка навыков планирования и организации времени мешает студентам эффективно распределять свои усилия между учебой, работой, личными делами и отдыхом.
+                    </p>
+                    <h3>
+                        Наша миссия:
+                    </h3>
+                    <p>
+                        Мы верим, что каждый студент должен иметь возможность научиться эффективно управлять своим временем. Наш проект направлен на то, чтобы сделать этот процесс понятным, доступным и приятным для студентов всех возрастов.
+                    </p>
+                    <h3>
+                        Что мы предлагаем?
+                    </h3>
+                    <ul>
+                        <li>Полезные статьи о тайм-менеджменте, планировании, организации и мотивации, написанные специально для студентов.</li>
+                        <li>Интерактивные инструменты для создания расписаний, ведения списков дел и отслеживания прогресса.</li>
+                    </ul>
+                    <h3>
+                        Присоединяйтесь к нам!
+                    </h3>
+                    <p>
+                        Давайте вместе шаг за шагом освоим искусство управления временем. Будьте уверены: вы не одни – мы рядом, чтобы поддержать вас на этом пути к успеху.
+                    </p>
+                </div>
+            </section>
+            <Footer/>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    );
 }

@@ -1,0 +1,133 @@
+/* ToDoList.css */
+
+.todo-form {
+    margin-top: 15px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background: rgba(69, 78, 117, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap; /* Добавляем перенос элементов на новую строку */
+}
+
+.todo-input, .todo-select, .todo-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #454e75;
+    flex: 1 1 auto; /* Делаем элементы формы растягиваемыми */
+    margin: 5px; /* Добавляем отступы между элементами */
+}
+
+.todo-input {
+    flex-grow: 2; /* Делаем поле ввода шире других элементов */
+}
+
+.todo-select {
+    flex-grow: 1; /* Делаем селект шире других элементов */
+}
+
+.todo-button {
+    background-color: #7587cb;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    flex-grow: 1; /* Делаем кнопку шире других элементов */
+}
+
+.todo-button:hover {
+    background-color: #2c324b;
+    transform: scale(1.1);
+}
+
+.todo-lists {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.todo-list-box {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.todo-list-box:hover {
+    background-color: #e1ebee;
+    transform: scale(1.03);
+}
+
+.todo-list-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #454e75;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.todo-item:hover {
+    background-color: #e1ebee;
+    transform: scale(1.03);
+}
+
+.todo-checkbox {
+    margin-right: 15px;
+}
+
+.todo-text {
+    flex-grow: 1;
+    font-size: 1.3em;
+    color: #454e75;
+}
+
+.todo-text.completed {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.todo-delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.todo-delete-button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.1);
+}
+
+.content h2 {
+    text-align: center;
+    font-size: 2.5em; /* Увеличиваем размер шрифта */
+    margin-bottom: 20px;
+    color: #454e75; /* Изменяем цвет текста */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Добавляем тень */
+    border-bottom: 2px solid #7587cb; /* Добавляем нижнюю границу */
+    padding-bottom: 10px; /* Добавляем отступ снизу */
+}
